@@ -1,7 +1,5 @@
-<template>
-  <div class="counter" @click="increase">
-    {{count}}
-  </div>
+<template lang="pug">
+.counter(@click="increase") {{count}}
 </template>
 
 <script>
@@ -24,10 +22,9 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.counter {
-  color: darkred;
-  font-size: 48px;
-  font-family: 'Times New Roman', Times, serif;
-}
+<style scoped lang="stylus">
+.counter
+  color darkred
+  font-size 48px
+  font-family 'Times New Roman', Times, serif
 </style>
